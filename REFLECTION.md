@@ -1,20 +1,14 @@
-# Reflection
+# RINGKASAN MINGGU 1 SAMPAI 7
 
-## Pengalaman Menggunakan Git dan GitHub
+Dari minggu 1–7 dipelajari proses pengembangan aplikasi mulai dari konsep software development,
+penggunaan Git/GitHub, penerapan arsitektur MVC, pembuatan dokumentasi API, rancangan database,
+hingga pengelolaan repository agar proyek lebih terstruktur dan mudah dikembangkan.
 
-Selama proses pengembangan aplikasi, Git digunakan untuk mengelola perubahan kode dan dokumentasi secara terstruktur. Setiap perubahan disimpan melalui commit agar riwayat pengembangan dapat dilacak.
+# TANTANGAN DAN CARA UNTUK MENGATASINYA
 
-## Hal yang Dipelajari
+Kesulitan yang saya alami terdapat pada materi minggu ke-3, yaitu penggunaan GitHub dan pengelolaan repository.
+Saya mengalami kendala dalam memahami proses branch, commit, push, pull, serta menghubungkan repository lokal dengan repository GitHub.
 
-- Membuat dan mengatur struktur folder proyek.
-- Menggunakan perintah Git seperti add, commit, push, dan log.
-- Membuat dokumentasi API Contract dan Database Schema.
-- Mengelola perubahan file menggunakan repository GitHub.
+Untuk mengatasi kesulitan tersebut, saya mempelajari kembali perintah-perintah dasar Git, melakukan praktik secara langsung menggunakan Git Bash, serta mencoba membuat repository, 
+melakukan perubahan file, commit, dan push secara bertahap hingga memahami alur kerja Git dan GitHub.
 
-## Tantangan
-
-Beberapa tantangan yang ditemukan adalah memahami alur kerja Git, seperti branch, commit, dan sinkronisasi repository lokal dengan GitHub.
-
-## Kesimpulan
-
-Penggunaan Git membantu proses pengembangan aplikasi menjadi lebih rapi, terdokumentasi, dan mudah dikembangkan secara bertahap.

@@ -1,8 +1,8 @@
 # API Contract - User Profile
 
-**Endpoint:** 
+**Endpoint:** `/api/v1/profile`
 
-**Method:** 
+**Method:** `GET`
 
 **Response Body (JSON):**
 
@@ -12,3 +12,31 @@
 "email": "mhs@univ.ac.id",
 "avatar_url": "https://image.com/avatar.png"
 }
+
+
+---
+
+# API Contract - User Login
+
+**Endpoint:** `/api/v1/login`
+
+**Method:** `POST`
+
+**Request Body (JSON):**
+
+{
+"username": "yerry",
+"password": "123"
+}
+
+
+**Response Body (JSON):**
+
+{
+"status": "success",
+"message": "Login berhasil",
+"token": "eyJhbGciOiJIUzI1NiIs..."
+}
+
+
+

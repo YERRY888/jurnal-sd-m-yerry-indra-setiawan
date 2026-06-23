@@ -1,4 +1,8 @@
-from views.dashboard_component import render_dashboard
+from controllers.api_handler import get_users
+from project_mvc.views.dashboard_component import (
+    fetch_data_from_api,
+    render_dashboard
+)
 
 # Simulasi State
 app_state = {
@@ -13,14 +17,21 @@ def update_state(new_data):
 
 
 if __name__ == "__main__":
-    print("Loading data...")
 
-    # Simulasi data masuk dari "Backend"
-    mock_data = [
-        {"id": 101, "name": "Produk A"},
-        {"id": 102, "name": "Produk B"}
-    ]
+    # kondisi loading
+    render_dashboard(
+        app_state["items"],
+        app_state["is_loading"]
+    )
 
-    update_state(mock_data)
+    # Integrasi Frontend - Backend
+    data = fetch_data_from_api(get_users)
 
-    render_dashboard(app_state["items"])
+    if data:
+        update_state(data)
+
+    # kondisi data tampil
+    render_dashboard(
+        app_state["items"],
+        app_state["is_loading"]
+    )

@@ -1,0 +1,13 @@
+/* Simulasi aturan tampilan dashboard */
+
+.dashboard {
+    color: blue;
+}
+
+.loading {
+    color: gray;
+}
+
+.item {
+    color: green;
+}

@@ -1,4 +1,4 @@
-from controllers.api_handler import get_users
+from project_mvc.controllers.api_handler import get_users
 from project_mvc.views.dashboard_component import (
     fetch_data_from_api,
     render_dashboard

@@ -6,18 +6,21 @@ app_state = {
     "is_loading": True
 }
 
+
 def update_state(new_data):
     app_state["items"] = new_data
     app_state["is_loading"] = False
 
+
 if __name__ == "__main__":
     print("Loading data...")
 
-    data = [
-        {"id": 1, "name": "Admin"},
-        {"id": 2, "name": "User"}
+    # Simulasi data masuk dari "Backend"
+    mock_data = [
+        {"id": 101, "name": "Produk A"},
+        {"id": 102, "name": "Produk B"}
     ]
 
-    update_state(data)
+    update_state(mock_data)
 
     render_dashboard(app_state["items"])

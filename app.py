@@ -1,8 +1,14 @@
+import os
+
 from project_mvc.controllers.api_handler import get_users
 from project_mvc.views.dashboard_component import (
     fetch_data_from_api,
     render_dashboard
 )
+
+# Membaca variabel environment
+user_name = os.getenv("APP_USER", "Guest")
+app_env = os.getenv("APP_ENV", "development")
 
 # Simulasi State
 app_state = {
@@ -17,6 +23,9 @@ def update_state(new_data):
 
 
 if __name__ == "__main__":
+
+    print(f"Halo {user_name}! Aplikasi ini berjalan di dalam kontainer Docker.")
+    print(f"Environment: {app_env}")
 
     # kondisi loading
     render_dashboard(
